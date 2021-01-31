@@ -1,0 +1,10 @@
+language: java
+jdk: oraclejdk15
+addons:
+  sonarcloud:
+    organization: "bramucciuni"
+    token: c2895e549c7bcbff4ec055cb04b5b9270ca3e9a0
+
+script:
+  - ant build
+  - sonar-scanner

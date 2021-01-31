@@ -1,0 +1,86 @@
+div#mapRes{   /*Margine tra input ricerca guest e mappa*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+div#logo{     /* centrare il logo */
+  vertical-align: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+div#piechart_3d{     /* centrare il logo */
+  padding-left: 50px;
+}
+
+div#supervise{   
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+div#guestSearch{
+  padding-top: 10px;
+}
+
+div#results{
+  padding-top: 15px;
+}
+
+
+
+ul#resultsLib {
+  position: absolute;
+  top: 15px;
+  bottom: 20px;
+  left: 20px;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 180px;
+}
+
+.my-custom-scrollbar {
+position: relative; 
+height: 400px;
+overflow: auto;
+padding-top: 20px;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+#tableBookingsDiv{
+  padding-right: 40px;
+}
+
+#nomeBib{
+  padding-top: 50px;
+}
+#reportDescription{
+	height:550px;
+}
+#reportFormDescription{
+	height:550px;
+}
+
+#reportLibraryDetailsDescription{
+	height:550px;
+}
+
+#divBtnSendReport{
+	padding-top:30px;
+	text-align:center;
+}
+
+#tableReportsDiv{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+#bookStatH4{
+	color:red;
+}
+#reservationWarning{
+	color:red;
+}
+

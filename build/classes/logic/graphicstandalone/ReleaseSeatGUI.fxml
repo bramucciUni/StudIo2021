@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="20.0" style="-fx-background-color: #52BE8C;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView id="ivLogoTop" fx:id="ivLogoTop" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/logoB.png" />
+               </image>
+            </ImageView>
+            <Label id="lbStudentName" fx:id="lbTextTop" text=" " />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Release seat">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbErrorReleaseSeat" text=" " textFill="#d60000" />
+            <Label text="Room:" />
+            <TextField fx:id="tfRoom" alignment="CENTER" maxWidth="300.0" prefHeight="30.0" promptText="Insert your username..." />
+            <Label text="Seat number:" />
+            <TextField fx:id="tfSeatNumber" alignment="CENTER" maxWidth="300.0" prefHeight="30.0" promptText="Insert your password..." />
+            <Button fx:id="btnRelease" mnemonicParsing="false" onAction="#btnReleasePressed" prefHeight="30.0" prefWidth="100.0" text="Release">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+               <children>
+                  <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackPressed" text="Back" />
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
